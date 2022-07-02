@@ -1,34 +1,41 @@
 # Chatty
-Real-time chat app. Just like Whatsapp
 
+Chat App, Just like WhatsApp
 
-### Design
-https://dribbble.com/shots/18048819-Zoko-Talking-business
+### Run
 
-### Aplikasi Chatting Features:
-1. Chat langsung 2 Arah seperti WA 
-2. Authentikasi (Login/Register) 
-3. Profil 
-4. Add Teman berdasarkan Email
-5. Register -> Email, Password, Confirm Password 
-6. Login -> Email, Password 
-    
-### Web Framework 
-Next.js https://nextjs.org/ 
+```bash
+npm install
+npm run dev
+```
 
-### Front-end: 
-Custom Style: Tailwind 
-Testing: Storybook 
-    
-### Rendering: 
-Singe Page Aplication 
+### Features:
+
+1. Real time chat between 2 people
+2. Authentication
+3. Profile
+4. Add new friend
+5. Register
+6. Login
+
+### Web Framework
+
+Next.js https://nextjs.org/
+
+### UI
+
+Styling: Tailwind
+Testing: Storybook
 
 ### Authentication
-NextAuth: https://next-auth.js.org/ 
-Email Confirmation 
 
-### Back-end: 
-Firebase Realtime Database
+NextAuth: https://next-auth.js.org/
+Email Confirmation
 
-### Hosting 
+### Database
+
+Redis
+
+### Hosting
+
 https://vercel.com/solutions/nextjs?utm_source=next-site&utm_medium=banner&utm_campaign=next-website
