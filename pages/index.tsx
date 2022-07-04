@@ -11,14 +11,22 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-
-
+      <main className='bg-neutral-800 md:flex flex-row h-screen w-full gap-0'>
+        {/* Menu bar */}
+        <div className=' text-white h-screen basis-1/4 border-r-4 border-r-neutral-500 '>
+          {/* Profile and Start chat */}
+          {/* Search chats */}
+          {/* Chat list */}
+          <h3>Profile</h3>
+        </div>
+        {/* Chat Area */}
+        <div className='flex justify-center items-center text-center basis-3/4 text-white h-screen w-full'>
+          <div>
+            <h1>Chatty</h1>
+            <h3>Start a New Chat</h3>
+          </div>
+        </div>
       </main>
-
-      <footer>
-
-      </footer>
 
     </div>
   )
