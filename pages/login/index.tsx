@@ -6,7 +6,7 @@ const LoginPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Chatty | Register</title>
+        <title>Chatty | Login</title>
       </Head>
       <div>
         <Login />
