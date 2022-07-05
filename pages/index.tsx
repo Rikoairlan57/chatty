@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import ChatArea from '../components/ChatArea'
+import ChatMenu from '../components/ChatMenu'
 
 const Home: NextPage = () => {
 
@@ -11,14 +13,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-
-
+      <main className='bg-neutral-800 md:flex flex-row h-screen w-full gap-0'>
+        <ChatMenu />
+        <ChatArea />
       </main>
-
-      <footer>
-
-      </footer>
 
     </div>
   )
