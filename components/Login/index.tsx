@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import LayoutLogres from "../LayoutLogres/index";
+import LayoutLogres from "../LayoutLogres";
 import PrimaryButton from "../UI/PrimaryButton";
 import SecondaryButton from "../UI/SecondaryButton";
 
