@@ -1,12 +1,42 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Register from "../../components/Register";
+import Button, { BUTTON_STYLES_TYPES } from "../../components/UI/Button";
+import Link from "next/link";
+import LayoutLogres from "../../components/LayoutLogres";
+
+
+function Input() {
+  return (<input className="appearance-none border rounded w-full py-2 px-4 text-neutral-700 leading-tight focus:outline-none focus:shadow-outline" type="text" />);
+}
+
 
 const RegisterPage: NextPage = () => {
   return (
-    <div>
-      <Register />
-    </div>
+    <LayoutLogres pageTitle="Register">
+      <h1 className="font-black text-4xl my-4">Register</h1>
+      <form>
+        <label className="block">Email Address</label>
+        <Input />
+        <label className="block mt-8 ">Password</label>
+        <input
+          className="appearance-none border rounded w-full py-2 px-4 text-neutral-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="password"
+        />
+        <label className="block mt-8 ">confirm Password</label>
+        <input
+          className="appearance-none border rounded w-full py-2 px-4 text-neutral-700 leading-tight focus:outline-none focus:shadow-outline"
+          type="password"
+        />
+      </form>
+      <Button styleType={BUTTON_STYLES_TYPES.primary}>Login</Button>
+      <h1 className="text-center my-5">OR</h1>
+      <Button styleType={BUTTON_STYLES_TYPES.secondary}>Authorize with</Button>
+      <p className="text-center my-4">
+        Already have an account?
+        <Link href="/login">
+          <a className="text-blue-600">Sign In</a>
+        </Link>
+      </p>
+    </LayoutLogres>
   );
 };
 
