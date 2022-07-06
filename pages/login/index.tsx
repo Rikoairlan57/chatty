@@ -4,14 +4,9 @@ import Login from "../../components/Login";
 
 const LoginPage: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Chatty | Login</title>
-      </Head>
-      <div>
-        <Login />
-      </div>
-    </>
+    <div>
+      <Login />
+    </div>
   );
 };
 

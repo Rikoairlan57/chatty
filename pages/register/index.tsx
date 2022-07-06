@@ -4,14 +4,9 @@ import Register from "../../components/Register";
 
 const RegisterPage: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Chatty | Register</title>
-      </Head>
-      <div>
-        <Register />
-      </div>
-    </>
+    <div>
+      <Register />
+    </div>
   );
 };
 
