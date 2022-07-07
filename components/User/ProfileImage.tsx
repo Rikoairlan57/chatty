@@ -1,10 +1,13 @@
 import Image from "next/image";
 
-const ProfileImage: React.FC = () => {
+interface ProfileImage {
+    className?: String,
+    onClick?: React.MouseEventHandler<HTMLImageElement>
+}
+
+const ProfileImage: React.FC<ProfileImage> = (props) => {
     return (
-        <div>
-            <Image className="rounded-full" width={50} height={50} src="/download.jpg" alt="Profile Image" />
-        </div>
+        <Image onClick={props.onClick} className={`rounded-full ${props.className}`} width={50} height={50} src="/download.jpg" alt="Profile Image" />
     );
 }
 

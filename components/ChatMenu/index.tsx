@@ -5,10 +5,12 @@ import Search from "./Search"
 import ChatTopMenu from "./ChatTopMenu"
 import ChatList from "../ChatList"
 
-
+/** 
+ * Chat menu on the left side of the screen, See figma design
+*/
 const ChatMenu: React.FunctionComponent = () => {
     return (
-        <div className=' bg-neutral-800 text-white h-screen basis-1/4 border-r-4 border-r-neutral-500 '>
+        <div className=' bg-neutral-800 text-white h-screen basis-1/3 border-r-4 border-r-neutral-500 '>
             <ChatTopMenu />
             <HorizontalLine />
             <Search />
