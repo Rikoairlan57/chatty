@@ -3,16 +3,17 @@ import React from "react"
 import HorizontalLine from "../UI/HorizontalLine"
 import Search from "./Search"
 import ChatTopMenu from "./ChatTopMenu"
+import ChatList from "../ChatList"
 
 
 const ChatMenu: React.FunctionComponent = () => {
     return (
-        <div className=' text-white h-screen basis-1/4 border-r-4 border-r-neutral-500 '>
+        <div className=' bg-neutral-800 text-white h-screen basis-1/4 border-r-4 border-r-neutral-500 '>
             <ChatTopMenu />
             <HorizontalLine />
             <Search />
             <HorizontalLine />
-
+            <ChatList />
         </div>
     )
 }
