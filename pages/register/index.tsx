@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Button, { BUTTON_STYLES_TYPES } from "../../components/UI/Button";
+import Button, { BUTTON_STYLES } from "../../components/UI/Button";
 import Link from "next/link";
 import LayoutLogres from "../../components/LayoutLogres";
 
@@ -27,9 +27,9 @@ const RegisterPage: NextPage = () => {
           type="password"
         />
       </form>
-      <Button styleType={BUTTON_STYLES_TYPES.primary}>Login</Button>
+      <Button buttonStyle={BUTTON_STYLES.primary}>Login</Button>
       <h1 className="text-center my-5">OR</h1>
-      <Button styleType={BUTTON_STYLES_TYPES.secondary}>Authorize with</Button>
+      <Button buttonStyle={BUTTON_STYLES.secondary}>Authorize with</Button>
       <p className="text-center my-4">
         Already have an account?
         <Link href="/login">

@@ -6,7 +6,17 @@ import ChatItem from './ChatItem';
 */
 function ChatList() {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col h-full overflow-scroll'>
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
+            <ChatItem />
             <ChatItem />
             <ChatItem />
             <ChatItem />

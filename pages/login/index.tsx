@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import LayoutLogres from "../../components/LayoutLogres";
-import Button, { BUTTON_STYLES_TYPES } from "../../components/UI/Button";
+import Button, { BUTTON_STYLES } from "../../components/UI/Button";
 
 const LoginPage: NextPage = () => {
   return (
@@ -20,9 +20,9 @@ const LoginPage: NextPage = () => {
             type="password"
           />
         </form>
-        <Button styleType={BUTTON_STYLES_TYPES.primary}>Login</Button>
+        <Button buttonStyle={BUTTON_STYLES.primary}>Login</Button>
         <h1 className="text-center my-5">OR</h1>
-        <Button styleType={BUTTON_STYLES_TYPES.secondary}>Authorize with Google</Button>
+        <Button buttonStyle={BUTTON_STYLES.secondary}>Authorize with Google</Button>
         <p className="text-center my-4">
           Dont have an account?
           <Link href="/register">

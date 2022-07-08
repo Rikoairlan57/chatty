@@ -2,7 +2,7 @@
 import React from 'react';
 import { ButtonProps } from '../../components/UI/Button';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { BUTTON_STYLES_TYPES } from '../../components/UI/Button';
+import { BUTTON_STYLES } from '../../components/UI/Button';
 
 
 import Button from '../../components/UI/Button';
@@ -10,7 +10,7 @@ import Button from '../../components/UI/Button';
 export default {
     title: "Components/UI/Button",
     component: Button,
-  
+
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args: ButtonProps) => <Button {...args} />;
@@ -18,13 +18,28 @@ const Template: ComponentStory<typeof Button> = (args: ButtonProps) => <Button {
 export const PrimaryButton = Template.bind({});
 
 PrimaryButton.args = {
-    styleType: BUTTON_STYLES_TYPES.primary,
+    buttonStyle: BUTTON_STYLES.primary,
     children: "Primary Button"
 };
 
 export const SecondaryButton = Template.bind({})
 
 SecondaryButton.args = {
-    styleType: BUTTON_STYLES_TYPES.secondary,
+    buttonStyle: BUTTON_STYLES.secondary,
     children: "Secondary Button"
+}
+
+export const ghostBlack = Template.bind({})
+
+ghostBlack.args = {
+    buttonStyle: BUTTON_STYLES.ghostBlack,
+    children: "Ghost Black Button"
+}
+
+export const ghostWhite = Template.bind({})
+
+ghostWhite.args = {
+    buttonStyle: BUTTON_STYLES.ghostWhite,
+    children: "Ghost White Button",
+    className: "bg-neutral-700"
 }
