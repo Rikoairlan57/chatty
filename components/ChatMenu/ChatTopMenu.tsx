@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { BsChatLeftText } from 'react-icons/bs'
+import ContactList from "../ContactList"
 import ProfileSetting from "../ProfileSetting"
-import SideDrawer from "../UI/SideDrawer"
 import ProfileImage from "../User/ProfileImage"
 
 
@@ -11,26 +11,42 @@ import ProfileImage from "../User/ProfileImage"
 
 const ChatTopMenu: React.FunctionComponent = () => {
 
-    const [isOpenDrawer, setIsOpenDrawer] = useState(false);
+    const [isProfileSettingOpen, setIsProfileSettingOpen] = useState(false);
+    const [isContactListOpen, setIsContactListOpen] = useState(false);
 
-    function profileImageClickHandler() {
-        setIsOpenDrawer(true)
+    function openProfileSetting() {
+        setIsProfileSettingOpen(true)
+        setIsContactListOpen(false)
     }
 
-    function closeProfileSettings() {
-        setIsOpenDrawer(false)
+    function closeProfileSetting() {
+        setIsProfileSettingOpen(false)
     }
 
-    //TODO show contact list when the chat button is clicked
+    function openContactList() {
+        setIsContactListOpen(true)
+        setIsProfileSettingOpen(false)
+    }
+
+    function closeContactList() {
+        setIsContactListOpen(false)
+    }
 
     return (
         <>
-            {isOpenDrawer && <ProfileSetting onClose={closeProfileSettings} />}
+            {
+                isContactListOpen
+                && <ContactList onClose={closeContactList} />
+            }
+            {
+                isProfileSettingOpen
+                && <ProfileSetting onClose={closeProfileSetting} />
+            }
             <div className="flex justify-between m-4 bg-neutral-800 text-white" >
-                <ProfileImage onClick={profileImageClickHandler} size={50} />
-                <div className="flex flex-col justify-center items-center">
+                <ProfileImage onClick={openProfileSetting} size={50} />
+                <div onClick={openContactList} className="flex flex-col justify-center items-center hover:cursor-pointer gap-1">
                     <BsChatLeftText size={24} />
-                    <p>New Chat</p>
+                    <p className="text-sm">Contact List</p>
                 </div>
             </div >
         </>

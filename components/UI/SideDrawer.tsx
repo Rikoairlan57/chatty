@@ -5,6 +5,7 @@ interface SideDrawerProps {
     onClose?: React.MouseEventHandler
     children?: React.ReactNode
     className?: String
+    drawerTitle: String
 }
 
 //TODO Slide animation from the left
@@ -20,7 +21,7 @@ const SideDrawer: React.FC<SideDrawerProps> = (props) => {
             </div>
             <div className={`bg-neutral-800 w-1/3 fixed z-20 top-0 left-0 h-screen p-4 flex flex-col gap-10 ${props.className}`}>
                 <div className="flex gap-2 items-center">
-                    <BiArrowBack onClick={props.onClose} size={32} /> <p>Profile</p>
+                    <BiArrowBack onClick={props.onClose} size={32} /> <p>{props.drawerTitle}</p>
                 </div>
                 {props.children}
             </div>

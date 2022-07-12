@@ -2,7 +2,7 @@ import SideDrawer from "../UI/SideDrawer"
 import UsernameSetting from "./UsernameSetting"
 import Button from "../UI/Button"
 import { BUTTON_STYLES } from "../UI/Button"
-import { ProfilePictureSetting } from "./ProfilePictureSetting"
+import ProfilePictureSetting from "./ProfilePictureSetting"
 
 interface ProfileSettingProps {
     onClose: React.MouseEventHandler
@@ -15,12 +15,10 @@ interface ProfileSettingProps {
 const ProfileSetting: React.FC<ProfileSettingProps> = (props) => {
 
     return (
-        <SideDrawer onClose={props.onClose}>
+        <SideDrawer drawerTitle="Profile Setting" onClose={props.onClose}>
             <ProfilePictureSetting />
             <UsernameSetting />
             <Button buttonStyle={BUTTON_STYLES.ghostWhite} >Logout</Button>
-
-
         </SideDrawer>
     )
 
