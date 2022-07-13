@@ -12,8 +12,6 @@ interface ContactListProps {
  * Side drawer for Contact List. See figma design
 */
 
-// TODO Create contact list
-
 const ContactList: React.FC<ContactListProps> = (props) => {
     return (
         <SideDrawer drawerTitle="Contact List" onClose={props.onClose}>

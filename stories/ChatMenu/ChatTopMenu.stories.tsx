@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import ChatTopMenu from '../../components/ChatMenu/ChatTopMenu';
+import ChatTopMenu from '../../features/MainMenu/components/ChatSideBarMenu/ChatTopMenu';
 
 export default {
 

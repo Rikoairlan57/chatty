@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import  Search from '../../components/UI/Search';
+import  Search from '../../components/ChatMenu/Search';
 
 export default {
   /* 👇 The title prop is optional.

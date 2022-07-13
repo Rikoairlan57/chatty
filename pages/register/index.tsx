@@ -8,6 +8,7 @@ function Input() {
   return (<input className="appearance-none border rounded w-full py-2 px-4 text-neutral-700 leading-tight focus:outline-none focus:shadow-outline" type="text" />);
 }
 
+// TODO Refactor this into components
 
 const RegisterPage: NextPage = () => {
   return (

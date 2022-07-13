@@ -3,7 +3,7 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import HorizontalLine from '../../components/UI/HorizontalLine';
+import HorizontalLine from '../../features/MainMenu/components/UI/HorizontalLine';
 
 export default {
     title: 'Components/UI/HorizontalLine',

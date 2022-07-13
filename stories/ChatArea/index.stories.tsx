@@ -2,13 +2,13 @@ import React from 'react';
 
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import ChatArea from '../../components/ChatArea/';
+import Chat from '../../features/Chat';
 
 export default {
     title: 'Components/ChatArea',
-    component: ChatArea,
-} as ComponentMeta<typeof ChatArea>;
+    component: Chat,
+} as ComponentMeta<typeof Chat>;
 
-const Template: ComponentStory<typeof ChatArea> = () => <ChatArea />;
+const Template: ComponentStory<typeof Chat> = () => <Chat />;
 
 export const Default = Template.bind({});

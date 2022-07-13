@@ -3,6 +3,9 @@ import Link from "next/link";
 import LayoutLogres from "../../components/LayoutLogres";
 import Button, { BUTTON_STYLES } from "../../components/UI/Button";
 
+// TODO Refactor this into components
+
+
 const LoginPage: NextPage = () => {
   return (
     <div>
