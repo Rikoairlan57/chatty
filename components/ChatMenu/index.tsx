@@ -1,7 +1,7 @@
 import React from "react"
 
 import HorizontalLine from "../UI/HorizontalLine"
-import Search from "./Search"
+import Search from "../UI/Search"
 import ChatTopMenu from "./ChatTopMenu"
 import ChatList from "./ChatList"
 

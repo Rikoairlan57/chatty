@@ -15,7 +15,7 @@ interface ProfileSettingProps {
 const ProfileSetting: React.FC<ProfileSettingProps> = (props) => {
 
     return (
-        <SideDrawer drawerTitle="Profile Setting" onClose={props.onClose}>
+        <SideDrawer className="m-4" drawerTitle="Profile Setting" onClose={props.onClose}>
             <ProfilePictureSetting />
             <UsernameSetting />
             <Button buttonStyle={BUTTON_STYLES.ghostWhite} >Logout</Button>
