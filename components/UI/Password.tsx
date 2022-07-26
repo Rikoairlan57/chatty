@@ -6,7 +6,7 @@ export interface PassProps {
 
 export const PASSWORD_STYLES: PassStyles = {
   primary:
-    "text-neutral-700 leading-tight focus:outline-none focus:shadow-outline",
+    "text-neutral-700 leading-tight ",
 };
 
 const Password: React.FC<PassProps> = ({
@@ -15,7 +15,7 @@ const Password: React.FC<PassProps> = ({
   return (
     <input
       type="password"
-      className={`appearance-none border rounded w-full py-2 px-4 ${passStyle} `}
+      className={`focus:outline-none focus:shadow-outline appearance-none border rounded w-full py-2 px-4 ${passStyle} `}
     />
   );
 };

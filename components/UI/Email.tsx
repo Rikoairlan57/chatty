@@ -6,14 +6,14 @@ export interface EmailProps {
 
 export const EMAIL_STYLES: EmailStyles = {
   primary:
-    "text-neutral-700 leading-tight focus:outline-none focus:shadow-outline",
+    "text-neutral-700 leading-tight ",
 };
 
 const Email: React.FC<EmailProps> = ({ emailStyle = EMAIL_STYLES.primary }) => {
   return (
     <input
       type="email"
-      className={`appearance-none border rounded w-full py-2 px-4 ${emailStyle} `}
+      className={`focus:outline-none focus:shadow-outline appearance-none border rounded w-full py-2 px-4 ${emailStyle} `}
     />
   );
 };
